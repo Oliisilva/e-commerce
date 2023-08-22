@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/1200px-LEGO_logo.svg.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="https://www.lego.com/es-ar">Ofertas</a></li>
+                <li><a href="https://www.lego.com/es-ar">Destacados</a></li>
+                <li><a href="https://www.lego.com/es-ar">Favoritos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h1> Trabaja con nosotros</h1>
+                <h2> Gracias por el interes en nuestra empresa</h2>
+                <p> Completa el siguiente formulario</p>
+            </div>
+            <div>
+                <form action="mailto:oliisilvacano@gmail.com">
+                    <fieldset>
+                        <legend>Informacion personal</legend>
+                        <div>
+                            <label for="fullname">Nombre y apellido</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Juan Perez" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div>
+                            <label for="dni/pasaporte">DNI o Pasaporte</label>
+                            <input type="text" id="dni/pasaporte" name="dni/pasaporte"  required>
+                        </div>
+                        <div>
+                            <label for="Puesto">Puesto de interes</label>
+                            <select name="Puesto de interes" id="Puesto">
+                                <option value="" selected>Seleccione una opcion</option>
+                                <option value="mkt">Analista de Marketing</option>
+                                <option value="fin">Jefe de finanzas</option>
+                                <option value="rep">Repartidor</option>
+                                <option value="RRHH">Director de RRHH</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="cv">Subi tu cv</label>
+                            <input type="file" name="cv" id="cv">
+                        </div>
+                        <div>
+                            <label for="age">Edad</label>
+                            <input type="number" name="age" id="age" min="18" max="80" step="0.5">
+                        </div>
+                        <div>
+                            <p>Idiomas</p>
+                            <input type="checkbox" id="language-spanish" value="spanish" name="language">
+                            <label for="language-spanish">Español</label>
+
+                            <input type="checkbox" id="language-english" value="english" name="language">
+                            <label for="language-english">Ingles</label>
+
+                            <input type="checkbox" id="language-french" value="french" name="language">
+                            <label for="language-french">Frances</label>
+
+                            <input type="checkbox" id="language-german" value="german" name="language">
+                            <label for="language-german">Aleman</label>
+                        </div>
+                        <div>
+                            <label for="telephone">Telefono</label>
+                            <input type="tel" name="telephone" id="telephone" maxlength="12">
+                        </div>
+                        <div>
+                            <label for="Linkedin">Linkedin</label>
+                            <input type="text" name="Linkedin" id="Linkedin">
+                        </div>
+                        <div>
+                            <label for="cover-letter">Carta de presentacion</label>
+                            <textarea name="cover-letter" id="cover-letter" cols="30" rows="10" maxlength="5000" placeholder="Contanos porque queres trabajar con nosotros"> 
+                            </textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Preferencias de trabajo</legend>
+                        <div>
+                            <p>Disponibilidad horaria</p>
+                            <input type="radio" name="working-preferences" id="morning">
+                            <label for="morning">Mañana</label>
+
+                            <input type="radio" name="working-preferences" id="evening">
+                            <label for="evening">Tarde</label>
+                        </div>
+                        <div>
+                            <p> Forma de trabajo</p>
+                            <input type="radio" name="working-place" id="remote">
+                            <label for="remote">Virtual</label>
+
+                            <input type="radio" name="working-place" id="facetoface">
+                            <label for="facetoface">Presencial</label>
+                        </div>
+                        <div>
+                            <label for="start-date">Comienzo</label>
+                            <input type="datetime-local" name="start-date" id="start-date">
+                        </div>
+                    </fieldset>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Resetear</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://www.lego.com/es-ar/careers">Trabaja con nosotros</a></li>
+                <li><a href="https://www.lego.com/es-ar/aboutus/newsroom">Noticias lego</a></li>
+                <li><a href="https://www.lego.com/es-ar/compliance-line">linea etica</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
